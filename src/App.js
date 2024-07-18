@@ -1,12 +1,14 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Profile from './Profile/Profile';
 import './App.css';
-import Profile from './components/Profile/Profile';
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={Profile} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Profile />} />
+      </Routes>
     </Router>
   );
 }

@@ -1,5 +1,4 @@
 import React, { useEffect, useState, useRef } from 'react';
-import axios from 'axios';
 import './Profile.css';
 import html2pdf from 'html2pdf.js';
 
@@ -8,18 +7,86 @@ const Profile = () => {
     const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
     const sectionRefs = useRef([]);
 
+    const staticProfile = {
+        name: 'Ali Rajab',
+        headline: 'Lead Software Engineer | Product Manager | Mobile Application Developer | Flutter | Java | Web Developer | Laravel | React.js | Vue.js | Junior Blockchain Developer | Solidity | Python',
+        location: 'Damascus Governorate, Syria',
+        contact: {
+            email: 'alirajab.dev@gmail.com',
+            phone: '+963-992840260',
+            linktree: 'https://linktr.ee/alirajab',
+        },
+        summary: "A Lead Software Engineer with over five years of professional experience, I have a proven track record in software development across various domains, including scientific research.<br><br> I excel at leading teams, developing cost-efficient solutions, and enhancing productivity through effective project management and clear communication.<br><br> My technical expertise spans mobile application development, web development, and database management, with a strong focus on delivering high-quality, scalable systems.<br><br> I am passionate about working on projects that have a significant impact and benefit millions of users.<br><br> My collaborative approach, combined with my technical skills, allows me to create solutions that improve user experience and operational efficiency.<br><br><b>Key Skills:</b><br> Project Management: Agile methodologies, ClickUp, Jira<br> Mobile Development: Flutter, Dart, Java, UI/UX design, REST API integration, Firebase<br> Web Development: C#, .Net core, PHP, Laravel, JavaScript, Node.js, Vue.js, HTML/CSS, AWS<br> Database Management: SQL Server, MySQL, SQLite, PostgreSQL, MongoDB<br><br> Fluent in both Arabic and English, I am committed to continuous learning and professional growth.<br><br> For more about my work and to connect, visit my <a href='https://linktr.ee/alirajab'>Linktree</a>.",
+        experience: [
+            {
+                job_title: 'Lead Software Engineer',
+                company: 'Axis X Group',
+                duration: 'August 2023 - February 2024',
+                location: 'Erbil Governorate, Iraq',
+                description: '- Supervised a team of 9 developers to effectively manage a delivery system, ensuring seamless operations and delivery of high-quality applications. <br><br> - Developed cost-efficient solutions, optimizing resource utilization and saving over $1000.<br><br> - Distributed tasks among team members, monitored progress, and addressed challenges to maintain project timelines, resulting in a 50% productivity increase.<br><br> - Acted as a liaison between the development team and stakeholders, ensuring clear communication and goal alignment, boosting productivity by 75%.<br><br> - Enhanced the server performance decreasing the load by 80% by editing 10+ APIs.<br><br> - <b>Tech: ClickUp, Flutter, Laravel, Linux, Github, JMeter</b>'
+            },
+            {
+                job_title: 'Full Stack Mobile Developer',
+                company: 'Balafrreen Travel and Education Services Company Ltd.',
+                duration: 'December 2022 - August 2023',
+                location: 'Erbil, Erbil Governorate, Iraq',
+                description: '- Improved data accessibility by 80% and server performance by 50%, reducing latency through collaboration with the backend team.<br><br> - Analyzed and processed over 10,000 rows of data for flight, airport, and airline, optimizing app display. <br><br> - Collaborated with the UI/UX team to enhance user experience, benefiting over 10,000 app users. <br><br> - Increased app user base by 35% by integrating Google, Apple, and Facebook sign-in options. <br><br> - Managed the app’s lifecycle from development to launch on the App Store and Google Play, ensuring a seamless user journey.<br><br> - <b>Tech: Flutter, AWS, Google Play, App Store, Node.js</b>'
+            },
+            {
+                job_title: 'System Analysis & Developer',
+                company: 'The General Electricity Company',
+                duration: 'November 2019 - July 2020',
+                location: 'Homs Governorate, Syria',
+                description: '- Created the required UML diagrams and ERD database diagram (+5) to meet stakeholders’ requirements and achieve scalable and maintainable system. <br><br> - Worked with a 2-person team to implement backend and frontend requirements. v<br><br> - Implemented FCM to automatically notify clients upon complaint resolution, reducing follow-up calls by 40% and improving customer satisfaction scores by 50%. <br><br> - <b>Tech: Ionic Framework, Visual Paradigm, MySQL, Laravel, Firebase Cloud Messaging (FCM)</b>'
+            }
+        ],
+        education: [
+            {
+                degree: 'MPhil, Software Engineering and Information Systems',
+                institution: 'Damascus University',
+                duration: 'March 2021 - September 2022',
+            },
+            {
+                degree: 'Bachelor, Information Engineering',
+                institution: 'Al-Baath University',
+                duration: 'September 2015 - October 2020',
+            }
+        ],
+        skills: {
+            'Project Management': {
+                'Proficient': ['Team Leadership', 'Agile', 'ClickUp'],
+                'Familiar': ['Jira']
+            },
+            'Mobile Application Development': {
+                'Proficient': ['Flutter', 'Dart', 'Java', 'UI/UX design', 'REST API integration', 'Firebase', 'Google Play', 'App Store', 'App Gallery', 'POS (SUNMI)', 'Figma', 'XCode', 'JSON'],
+                'Familiar': ['Swift', 'Objective-C']
+            },
+            'Web Development': {
+                'Proficient': ['C#', '.Net core', 'Postman', 'PHP', 'Laravel', 'JavaScript', 'Node.js', 'Vue.js', 'HTML/CSS', 'Bootstrap', 'Tailwind CSS', 'Linux', 'Server Administration', 'AWS', 'Git', 'Github', 'Gitlab', 'Pinia'],
+                'Familiar': ['Typescript', 'React.js', 'Next.js']
+            },
+            'Database Management': {
+                'Proficient': ['SQL Server', 'MSSQL', 'MySQL', 'SQLite', 'PostgreSQL', 'MongoDB']
+            }
+        },
+        accomplishments: {
+            certifications: [
+                'IBM Data Science Professional Certificate',
+                'Thanks letter from The General Electricity Company'
+            ],
+            languages: [
+                'Arabic',
+                'English',
+            ]
+        },
+    };
+
     useEffect(() => {
-        axios.get('/api/profile')
-            .then(response => {
-                setProfile(response.data);
-            })
-            .catch(error => {
-                console.error('There was an error fetching the profile!', error);
-            });
+        setProfile(staticProfile);
     }, []);
 
     useEffect(() => {
-        if (!profile) return; 
+        if (!profile) return;
 
         const observer = new IntersectionObserver(
             (entries) => {
@@ -39,17 +106,23 @@ const Profile = () => {
         return () => {
             observer.disconnect();
         };
-    }, [profile]); 
+    }, [profile]);
 
     if (!profile) return <div>Loading...</div>;
 
     const renderSkills = (skills) => {
         return (
             <div className="skills-list">
-                {skills.map((skill, index) => (
-                    <span key={index} className="skill-item">
-                        {skill.title}: {skill.skills.join(', ')}
-                    </span>
+                {Object.keys(skills).map((category, index) => (
+                    <div key={index} className="skill-category">
+                        <h3>{category}</h3>
+                        {Object.keys(skills[category]).map((level, index) => (
+                            <div key={index}>
+                                <h4>{level}</h4>
+                                <span>{skills[category][level].join(', ')}</span>
+                            </div>
+                        ))}
+                    </div>
                 ))}
             </div>
         );
@@ -60,17 +133,17 @@ const Profile = () => {
 
         // Clone the profile container
         const element = document.getElementById('profile-container').cloneNode(true);
-    
+
         // Remove the profile picture and download button
         const profilePic = element.querySelector('.profile-pic');
         const downloadButton = element.querySelector('.download-button');
         if (profilePic) profilePic.remove();
         if (downloadButton) downloadButton.remove();
-    
+
         // Make all sections visible
         const sections = element.querySelectorAll('.profile-section');
         sections.forEach(section => section.classList.add('visible'));
-    
+
         // Configure PDF options
         const opt = {
             margin: 10,
@@ -79,7 +152,7 @@ const Profile = () => {
             html2canvas: { scale: 2 },
             jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
         };
-    
+
         // Generate PDF
         html2pdf().from(element).set(opt).save().then(() => {
             setIsGeneratingPDF(false);
@@ -89,7 +162,7 @@ const Profile = () => {
     return (
         <div className="profile-container" id="profile-container">
             <div className="profile-header">
-                <img src="assets/img/profile_img.jpg" alt="Profile" className="profile-pic" />
+                <img src="/assets/img/profile_img.jpg" alt="Profile" className="profile-pic" />
                 <div className="profile-header-info">
                     <h1>{profile.name}</h1>
                     <h2>{profile.headline}</h2>
@@ -97,22 +170,21 @@ const Profile = () => {
                     <p>Email: <a href={`mailto:${profile.contact.email}`}>{profile.contact.email}</a></p>
                     <p>Phone: <a href={`tel:${profile.contact.phone}`}>{profile.contact.phone}</a></p>
                     <p>Linktree: <a href={profile.contact.linktree} target="_blank" rel="noopener noreferrer">Linktree</a></p>
-                    <button 
-    className="download-button" 
-    onClick={downloadProfileAsPDF}
-    disabled={isGeneratingPDF}
->
-    {isGeneratingPDF ? 'Generating PDF...' : 'Download as PDF'}
-</button>
+                    <button
+                        className="download-button"
+                        onClick={downloadProfileAsPDF}
+                        disabled={isGeneratingPDF}
+                    >
+                        {isGeneratingPDF ? 'Generating PDF...' : 'Download as PDF'}
+                    </button>
                 </div>
             </div>
-            
-            {/* Render all sections regardless of visibility */}
+
             <div className="profile-section" ref={el => sectionRefs.current[0] = el}>
                 <h2>About</h2>
                 <p dangerouslySetInnerHTML={{ __html: profile.summary }}></p>
             </div>
-            
+
             <div className="profile-section" ref={el => sectionRefs.current[1] = el}>
                 <h2>Experience</h2>
                 {profile.experience.map((job, index) => (
@@ -124,7 +196,7 @@ const Profile = () => {
                     </div>
                 ))}
             </div>
-            
+
             <div className="profile-section" ref={el => sectionRefs.current[2] = el}>
                 <h2>Education</h2>
                 {profile.education.map((edu, index) => (
@@ -134,38 +206,12 @@ const Profile = () => {
                     </div>
                 ))}
             </div>
-            
+
             <div className="profile-section" ref={el => sectionRefs.current[3] = el}>
                 <h2>Skills</h2>
-                <div className="skill-category">
-                    <h3>Project Management</h3>
-                    {renderSkills([
-                        { title: 'Proficient', skills: ['Team Leadership', 'Agile', 'Clickup'] },
-                        { title: 'Familiar', skills: ['Jira'] }
-                    ])}
-                </div>
-                <div className="skill-category">
-                    <h3>Mobile Application Development</h3>
-                    {renderSkills([
-                        { title: 'Proficient', skills: ['Flutter', 'Dart', 'Java', 'UI/UX', 'Google Play', 'App Store', 'App Gallery', 'POS (SUNMI)', 'Figma', 'XCode', 'REST API', 'Ionic', 'Firebase', 'JSON'] },
-                        { title: 'Familiar', skills: ['Swift', 'Objective-C'] }
-                    ])}
-                </div>
-                <div className="skill-category">
-                    <h3>Web Development</h3>
-                    {renderSkills([
-                        { title: 'Proficient', skills: ['C#', '.Net core', 'Postman', 'PHP', 'Laravel', 'Javascript', 'Pinia', 'HTML/CSS', 'Bootstrap', 'Tailwind CSS', 'Linux', 'Server Administration', 'AWS', 'Git', 'Github', 'Gitlab', 'Vue.js'] },
-                        { title: 'Familiar', skills: ['Typescript', 'React.js', 'Node.js', 'Next.js'] }
-                    ])}
-                </div>
-                <div className="skill-category">
-                    <h3>Database Management</h3>
-                    {renderSkills([
-                        { title: 'Proficient', skills: ['SQL Server', 'MSSQL', 'MySQL', 'SQLite', 'PostgreSQL', 'MongoDB'] }
-                    ])}
-                </div>
+                {renderSkills(profile.skills)}
             </div>
-            
+
             <div className="profile-section" ref={el => sectionRefs.current[4] = el}>
                 <h2>Accomplishments</h2>
                 <div>
