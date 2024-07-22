@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/AliRajab12/Alirajab12.github.io/static/css/main.0c943e59.css",
-    "main.js": "/AliRajab12/Alirajab12.github.io/static/js/main.5da64d69.js",
-    "static/js/213.a93db5e8.chunk.js": "/AliRajab12/Alirajab12.github.io/static/js/213.a93db5e8.chunk.js",
-    "static/js/732.98ef604b.chunk.js": "/AliRajab12/Alirajab12.github.io/static/js/732.98ef604b.chunk.js",
-    "static/js/453.9415623e.chunk.js": "/AliRajab12/Alirajab12.github.io/static/js/453.9415623e.chunk.js",
-    "index.html": "/AliRajab12/Alirajab12.github.io/index.html",
-    "main.0c943e59.css.map": "/AliRajab12/Alirajab12.github.io/static/css/main.0c943e59.css.map",
-    "main.5da64d69.js.map": "/AliRajab12/Alirajab12.github.io/static/js/main.5da64d69.js.map",
-    "213.a93db5e8.chunk.js.map": "/AliRajab12/Alirajab12.github.io/static/js/213.a93db5e8.chunk.js.map",
-    "732.98ef604b.chunk.js.map": "/AliRajab12/Alirajab12.github.io/static/js/732.98ef604b.chunk.js.map",
-    "453.9415623e.chunk.js.map": "/AliRajab12/Alirajab12.github.io/static/js/453.9415623e.chunk.js.map"
+    "main.css": "/static/css/main.0c943e59.css",
+    "main.js": "/static/js/main.c52dc9d4.js",
+    "static/js/213.a93db5e8.chunk.js": "/static/js/213.a93db5e8.chunk.js",
+    "static/js/732.98ef604b.chunk.js": "/static/js/732.98ef604b.chunk.js",
+    "static/js/453.9415623e.chunk.js": "/static/js/453.9415623e.chunk.js",
+    "index.html": "/index.html",
+    "main.0c943e59.css.map": "/static/css/main.0c943e59.css.map",
+    "main.c52dc9d4.js.map": "/static/js/main.c52dc9d4.js.map",
+    "213.a93db5e8.chunk.js.map": "/static/js/213.a93db5e8.chunk.js.map",
+    "732.98ef604b.chunk.js.map": "/static/js/732.98ef604b.chunk.js.map",
+    "453.9415623e.chunk.js.map": "/static/js/453.9415623e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c943e59.css",
-    "static/js/main.5da64d69.js"
+    "static/js/main.c52dc9d4.js"
   ]
 }
