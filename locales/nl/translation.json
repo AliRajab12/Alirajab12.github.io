@@ -1,0 +1,86 @@
+{
+    "welcome_message": "Welkom op de profielpagina",
+    "about": "Over",
+    "experience": "Ervaring",
+    "education": "Opleiding",
+    "skills": "Vaardigheden",
+    "profileHeader": {
+        "downloadButton": "Download als PDF",
+        "generatingPDF": "PDF aan het genereren ..."
+    },
+    "accomplishments": "Prestaties",
+    "profile": {
+        "name": "Ali Rajab",
+        "headline": "Software Engineer III | Product Manager | Mobiele Applicatie Ontwikkelaar | Flutter | Java | Web Developer | Laravel | React.js | Vue.js | Junior Blockchain Developer | Solidity | Python",
+        "location": "Hama Governorate, Syrië",
+        "contact": {
+        "email": "alirajab.dev@gmail.com",
+        "phone": "+963-992840260",
+        "linktree": "https://linktr.ee/alirajab"
+        },
+        "summary": "Een Lead Software Engineer met meer dan vijf jaar professionele ervaring, ik heb een bewezen staat van dienst in softwareontwikkeling op verschillende gebieden, waaronder wetenschappelijk onderzoek.<br><br> Ik blink uit in het leiden van teams, het ontwikkelen van kosteneffectieve oplossingen en het verbeteren van de productiviteit door effectief projectbeheer en duidelijke communicatie.<br><br> Mijn technische expertise omvat mobiele applicatieontwikkeling, webontwikkeling en databasebeheer, met een sterke focus op het leveren van hoogwaardige, schaalbare systemen.<br><br> Ik ben gepassioneerd over het werken aan projecten die een aanzienlijke impact hebben en miljoenen gebruikers ten goede komen.<br><br> Mijn samenwerkende aanpak, gecombineerd met mijn technische vaardigheden, stelt me in staat om oplossingen te creëren die de gebruikerservaring en operationele efficiëntie verbeteren.<br><br><b>Sleutelvaardigheden:</b><br> Projectmanagement: Agile-methodologieën, ClickUp, Jira<br> Mobiele Ontwikkeling: Flutter, Dart, Java, UI/UX-ontwerp, REST API-integratie, Firebase<br> Webontwikkeling: C#, .Net core, PHP, Laravel, JavaScript, Node.js, Vue.js, HTML/CSS, AWS<br> Databasebeheer: SQL Server, MySQL, SQLite, PostgreSQL, MongoDB<br><br> Vloeiend in zowel Arabisch als Engels, ik zet me in voor continue leren en professionele groei.<br><br> Voor meer over mijn werk en om verbinding te maken, bezoek mijn <a href='https://linktr.ee/alirajab'>Linktree</a>.",
+        "experience": [
+        {
+            "job_title": "Lead Software Engineer",
+            "company": "Axis X Group",
+            "duration": "Augustus 2023 - Februari 2024",
+            "location": "Erbil Governorate, Irak",
+            "description": "- Toezicht gehouden op een team van 9 ontwikkelaars om een leveringssysteem effectief te beheren, en zorgen voor naadloze operaties en levering van hoogwaardige applicaties. <br><br> - Ontwikkelde kosteneffectieve oplossingen, optimaliseerde het middelengebruik en bespaarde meer dan $1000.<br><br> - Verdeel taken onder teamleden, bewaakte de voortgang en loste uitdagingen op om projectdeadlines te halen, wat resulteerde in een productiviteitsstijging van 50%.<br><br> - Fungeerde als schakel tussen het ontwikkelingsteam en belanghebbenden, zorgde voor duidelijke communicatie en doelafstemming, wat de productiviteit met 75% verhoogde.<br><br> - Verbeterde de serverprestaties door de belasting met 80% te verminderen door 10+ API's te bewerken.<br><br> - <b>Tech: ClickUp, Flutter, Laravel, Linux, Github, JMeter</b>"
+        },
+        {
+            "job_title": "Full Stack Mobile Developer",
+            "company": "Balafrreen Travel and Education Services Company Ltd.",
+            "duration": "December 2022 - Augustus 2023",
+            "location": "Erbil, Erbil Governorate, Irak",
+            "description": "- Verbeterde de toegankelijkheid van gegevens met 80% en de serverprestaties met 50%, waardoor de latentie werd verminderd door samen te werken met het backend-team.<br><br> - Geanalyseerd en verwerkt meer dan 10.000 rijen gegevens voor vlucht, luchthaven en luchtvaartmaatschappij, optimaliseerde de weergave van de app. <br><br> - Samengewerkt met het UI/UX-team om de gebruikerservaring te verbeteren, wat meer dan 10.000 app-gebruikers ten goede kwam. <br><br> - Verhoogde de gebruikersbasis van de app met 35% door Google-, Apple- en Facebook-aanmeldopties te integreren. <br><br> - Beheerde de levenscyclus van de app van ontwikkeling tot lancering op de App Store en Google Play, en zorgde voor een naadloze gebruikerservaring.<br><br> - <b>Tech: Flutter, AWS, Google Play, App Store, Node.js</b>"
+        },
+        {
+            "job_title": "Systeem Analyse & Ontwikkelaar",
+            "company": "The General Electricity Company",
+            "duration": "November 2019 - Juli 2020",
+            "location": "Homs Governorate, Syrië",
+            "description": "- Gecreëerd de vereiste UML-diagrammen en ERD-database diagram (+5) om te voldoen aan de eisen van belanghebbenden en een schaalbaar en onderhoudbaar systeem te realiseren. <br><br> - Samengewerkt met een 2-persoons team om backend- en frontendvereisten te implementeren. <br><br> - FCM geïmplementeerd om klanten automatisch te informeren bij klachtoplossing, wat volgoproepen met 40% verminderde en de klanttevredenheidsscores met 50% verbeterde. <br><br> - <b>Tech: Ionic Framework, Visual Paradigm, MySQL, Laravel, Firebase Cloud Messaging (FCM)</b>"
+        }
+        ],
+        "education": [
+        {
+            "degree": "MPhil, Software Engineering and Information Systems",
+            "institution": "Damascus University",
+            "duration": "Maart 2021 - September 2022"
+        },
+        {
+            "degree": "Bachelor, Information Engineering",
+            "institution": "Al-Baath University",
+            "duration": "September 2015 - Oktober 2020"
+        }
+        ],
+        "skills": {
+        "Project Management": {
+            "Proficient": ["Team Leadership", "Agile", "ClickUp"],
+            "Familiar": ["Jira"]
+        },
+        "Mobile Application Development": {
+            "Proficient": ["Flutter", "Dart", "Java", "UI/UX design", "REST API integratie", "Firebase", "Google Play", "App Store", "App Gallery", "POS (SUNMI)", "Figma", "XCode", "JSON"],
+            "Familiar": ["Swift", "Objective-C"]
+        },
+        "Web Development": {
+            "Proficient": ["C#", ".Net core", "Postman", "PHP", "Laravel", "JavaScript", "Node.js", "Vue.js", "HTML/CSS", "Bootstrap", "Tailwind CSS", "Linux", "Serveradministratie", "AWS", "Git", "Github", "Gitlab", "Pinia"],
+            "Familiar": ["Typescript", "React.js", "Next.js"]
+        },
+        "Database Management": {
+            "Proficient": ["SQL Server", "MSSQL", "MySQL", "SQLite", "PostgreSQL", "MongoDB"]
+        }
+        },
+        "accomplishments": {
+        "certifications": [
+            "IBM Data Science Professional Certificate",
+            "Dankbrief van The General Electricity Company"
+        ],
+        "languages": [
+            "Arabisch",
+            "Engels"
+        ]
+        }
+    }
+      }
+      
