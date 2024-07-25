@@ -71,6 +71,15 @@
           "Proficient": ["SQL Server", "MSSQL", "MySQL", "SQLite", "PostgreSQL", "MongoDB"]
         }
       },
+      "projects": [
+        {
+          "title": "Project Name",
+          "description": "A brief description of the project.",
+          "githubLink": "https://github.com/yourusername/project",
+          "liveLink": "https://project-demo.com",
+          "technologies": ["React", "Node.js", "MongoDB"]
+        }
+      ],
       "accomplishments": {
         "certifications": [
           "IBM Data Science Professional Certificate",
