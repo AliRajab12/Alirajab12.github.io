@@ -4,6 +4,7 @@
     "experience": "Erfahrung",
     "education": "Ausbildung",
     "skills": "Fähigkeiten",
+    "projects": "Projekte",
     "profileHeader": {
         "downloadButton": "Als PDF herunterladen",
         "generatingPDF": "PDF wird generiert ..."
@@ -71,6 +72,15 @@
             "Proficient": ["SQL Server", "MSSQL", "MySQL", "SQLite", "PostgreSQL", "MongoDB"]
         }
         },
+        "projects": [
+            {
+              "title": "Flight Ticket Reservation System",
+              "description": "- Ein Dashboard erstellt, das Administratoren ermöglicht, Flüge, Reservierungen, Benutzer und deren Rollen zu verwalten (+3).<br><br> - Nutzern ermöglicht, nach Flügen zu suchen, Reservierungen vorzunehmen und ihre Reservierungen zu verwalten.<br><br> - Den Code-First-Ansatz verwendet, um eine Datenbank mit 6+ Tabellen in MSSQL zu entwerfen und zu verwalten.<br><br> - Das Razor-Seitenmodell implementiert, um 15+ Webseiten und deren zugehörige Logik zu verwalten.<br><br> - Mehrsprachige Unterstützung für Arabisch und Englisch hinzugefügt, um eine vielfältige Benutzerbasis zu bedienen.",
+              "githubLink": "",
+              "liveLink": "",
+              "technologies": [".NET 6 (cross-platform)", "Bootstrap", "HTML","CSS","JS","SQL Server"]
+            }
+          ],
         "accomplishments": {
         "certifications": [
             "IBM Data Science Professional Certificate",

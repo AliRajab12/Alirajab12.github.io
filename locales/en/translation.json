@@ -4,6 +4,7 @@
     "experience": "Experience",
     "education": "Education",
     "skills": "Skills",
+    "projects": "Projects",
     "accomplishments": "Accomplishments",
     "profileHeader":{
         "downloadButton":"Download as a PDF",
@@ -73,11 +74,11 @@
       },
       "projects": [
         {
-          "title": "Project Name",
-          "description": "A brief description of the project.",
-          "githubLink": "https://github.com/yourusername/project",
-          "liveLink": "https://project-demo.com",
-          "technologies": ["React", "Node.js", "MongoDB"]
+          "title": "Flight Ticket Reservation System",
+          "description": "- Built a dashboard for administrators to manage flights, reservations, users, and thier roles(+3).<br><br> - Enabled users to search among flights, make reservations, and manage their reservations.<br><br> - Utilized the Code-First approach to design and manage a database with 6+ tables in MSSQL.<br><br> - Implemented Razor page model for managing 15+ website pages and their associated logic.<br><br> - Added multilingual support for Arabic and English, catering to a diverse user base.",
+          "githubLink": "",
+          "liveLink": "",
+          "technologies": [".NET 6 (cross-platform)", "Bootstrap", "HTML","CSS","JS","SQL Server"]
         }
       ],
       "accomplishments": {
