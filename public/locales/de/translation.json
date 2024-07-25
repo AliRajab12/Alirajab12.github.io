@@ -1,0 +1,85 @@
+{
+    "welcome_message": "Willkommen auf der Profilseite",
+    "about": "Über",
+    "experience": "Erfahrung",
+    "education": "Ausbildung",
+    "skills": "Fähigkeiten",
+    "profileHeader": {
+        "downloadButton": "Als PDF herunterladen",
+        "generatingPDF": "PDF wird generiert ..."
+    },
+    "accomplishments": "Leistungen",
+    "profile": {
+        "name": "Ali Rajab",
+        "headline": "Software Engineer III | Produktmanager | Mobile App-Entwickler | Flutter | Java | Webentwickler | Laravel | React.js | Vue.js | Junior Blockchain-Entwickler | Solidity | Python",
+        "location": "Gouvernement Hama, Syrien",
+        "contact": {
+        "email": "alirajab.dev@gmail.com",
+        "phone": "+963-992840260",
+        "linktree": "https://linktr.ee/alirajab"
+        },
+        "summary": "Ein Lead Software Engineer mit mehr als fünf Jahren Berufserfahrung, ich habe eine nachgewiesene Erfolgsbilanz in der Softwareentwicklung in verschiedenen Bereichen, einschließlich wissenschaftlicher Forschung.<br><br> Ich zeichne mich durch die Leitung von Teams, die Entwicklung kosteneffektiver Lösungen und die Steigerung der Produktivität durch effektives Projektmanagement und klare Kommunikation aus.<br><br> Meine technische Expertise umfasst die Entwicklung von mobilen Anwendungen, Webentwicklung und Datenbankmanagement, mit einem starken Fokus auf die Bereitstellung hochwertiger, skalierbarer Systeme.<br><br> Ich bin leidenschaftlich daran interessiert, an Projekten zu arbeiten, die einen erheblichen Einfluss haben und Millionen von Nutzern zugutekommen.<br><br> Mein kollaborativer Ansatz, kombiniert mit meinen technischen Fähigkeiten, ermöglicht es mir, Lösungen zu schaffen, die die Benutzererfahrung und die betriebliche Effizienz verbessern.<br><br><b>Schlüsselkompetenzen:</b><br> Projektmanagement: Agile-Methoden, ClickUp, Jira<br> Mobile Entwicklung: Flutter, Dart, Java, UI/UX-Design, REST API-Integration, Firebase<br> Webentwicklung: C#, .Net Core, PHP, Laravel, JavaScript, Node.js, Vue.js, HTML/CSS, AWS<br> Datenbankmanagement: SQL Server, MySQL, SQLite, PostgreSQL, MongoDB<br><br> Fließend in Arabisch und Englisch, setze ich mich für kontinuierliches Lernen und berufliches Wachstum ein.<br><br> Für mehr über meine Arbeit und um Kontakt aufzunehmen, besuchen Sie mein <a href='https://linktr.ee/alirajab'>Linktree</a>.",
+        "experience": [
+        {
+            "job_title": "Lead Software Engineer",
+            "company": "Axis X Group",
+            "duration": "August 2023 - Februar 2024",
+            "location": "Gouvernement Erbil, Irak",
+            "description": "- Überwachung eines Teams von 9 Entwicklern, um ein Liefermanagementsystem effektiv zu verwalten und einen nahtlosen Betrieb sowie die Lieferung hochwertiger Anwendungen sicherzustellen. <br><br> - Entwickelte kosteneffektive Lösungen, optimierte die Ressourcennutzung und sparte über 1000 USD.<br><br> - Aufgabenverteilung unter Teammitgliedern, Überwachung des Fortschritts und Lösung von Herausforderungen, um Projekttermine einzuhalten, was zu einer Produktivitätssteigerung von 50% führte.<br><br> - Diente als Verbindung zwischen dem Entwicklungsteam und den Stakeholdern, stellte klare Kommunikation und Zielausrichtung sicher, was die Produktivität um 75% steigerte.<br><br> - Verbesserte die Serverleistung durch Reduzierung der Last um 80% durch Bearbeitung von über 10 APIs.<br><br> - <b>Tech: ClickUp, Flutter, Laravel, Linux, Github, JMeter</b>"
+        },
+        {
+            "job_title": "Full Stack Mobile Developer",
+            "company": "Balafrreen Travel and Education Services Company Ltd.",
+            "duration": "Dezember 2022 - August 2023",
+            "location": "Erbil, Gouvernement Erbil, Irak",
+            "description": "- Verbessert die Datenzugänglichkeit um 80% und die Serverleistung um 50%, wodurch die Latenzzeit durch Zusammenarbeit mit dem Backend-Team reduziert wurde.<br><br> - Analysiert und verarbeitet über 10.000 Datenreihen für Flüge, Flughäfen und Fluggesellschaften, optimierte die Anzeige der App. <br><br> - Zusammenarbeit mit dem UI/UX-Team zur Verbesserung der Benutzererfahrung, was über 10.000 App-Nutzern zugutekam. <br><br> - Erhöhte die Nutzerbasis der App um 35% durch Integration von Google-, Apple- und Facebook-Anmeldeoptionen. <br><br> - Verwaltung des gesamten App-Lebenszyklus von der Entwicklung bis zur Veröffentlichung im App Store und Google Play, um eine nahtlose Benutzererfahrung zu gewährleisten.<br><br> - <b>Tech: Flutter, AWS, Google Play, App Store, Node.js</b>"
+        },
+        {
+            "job_title": "Systemanalytiker & Entwickler",
+            "company": "Die Allgemeine Elektrizitätsgesellschaft",
+            "duration": "November 2019 - Juli 2020",
+            "location": "Gouvernement Homs, Syrien",
+            "description": "- Erstellte die erforderlichen UML-Diagramme und ERD-Datenbankdiagramme (+5), um den Anforderungen der Stakeholder gerecht zu werden und ein skalierbares und wartbares System zu realisieren. <br><br> - Zusammenarbeit mit einem 2-Personen-Team zur Implementierung von Backend- und Frontend-Anforderungen. <br><br> - Implementierte FCM, um Kunden bei Lösung von Beschwerden automatisch zu benachrichtigen, wodurch Nachverfolgungsanrufe um 40% reduziert und die Kundenzufriedenheit um 50% verbessert wurde. <br><br> - <b>Tech: Ionic Framework, Visual Paradigm, MySQL, Laravel, Firebase Cloud Messaging (FCM)</b>"
+        }
+        ],
+        "education": [
+        {
+            "degree": "MPhil, Software Engineering und Informationssysteme",
+            "institution": "Universität Damaskus",
+            "duration": "März 2021 - September 2022"
+        },
+        {
+            "degree": "Bachelor, Information Engineering",
+            "institution": "Al-Baath Universität",
+            "duration": "September 2015 - Oktober 2020"
+        }
+        ],
+        "skills": {
+        "Projektmanagement": {
+            "Proficient": ["Teamführung", "Agile", "ClickUp"],
+            "Familiar": ["Jira"]
+        },
+        "Mobile App-Entwicklung": {
+            "Proficient": ["Flutter", "Dart", "Java", "UI/UX-Design", "REST API-Integration", "Firebase", "Google Play", "App Store", "App Gallery", "POS (SUNMI)", "Figma", "XCode", "JSON"],
+            "Familiar": ["Swift", "Objective-C"]
+        },
+        "Webentwicklung": {
+            "Proficient": ["C#", ".Net Core", "Postman", "PHP", "Laravel", "JavaScript", "Node.js", "Vue.js", "HTML/CSS", "Bootstrap", "Tailwind CSS", "Linux", "Serveradministration", "AWS", "Git", "Github", "Gitlab", "Pinia"],
+            "Familiar": ["Typescript", "React.js", "Next.js"]
+        },
+        "Datenbankmanagement": {
+            "Proficient": ["SQL Server", "MSSQL", "MySQL", "SQLite", "PostgreSQL", "MongoDB"]
+        }
+        },
+        "accomplishments": {
+        "certifications": [
+            "IBM Data Science Professional Certificate",
+            "Dankesschreiben von der Allgemeinen Elektrizitätsgesellschaft"
+        ],
+        "languages": [
+            "Arabisch",
+            "Englisch"
+        ]
+        }
+    }
+}

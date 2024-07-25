@@ -1,16 +1,13 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Profile from './Profile/Profile';
 import './App.css';
-
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Profile />} />
-      </Routes>
-    </Router>
-  );
-}
+import './i18n'; 
+import LanguageSwitcher from './components/LanguageSwitcher/LanguageSwitcher';
+const App = () => (
+    <div className="app">
+        <LanguageSwitcher />
+        <Profile />
+    </div>
+);
 
 export default App;
