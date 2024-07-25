@@ -1,12 +1,15 @@
 import React from 'react';
 import './Projects.css';
+import { useTranslation } from 'react-i18next';
+
 const Projects = ({ projects }) => {
+  const { t } = useTranslation();
   return (
     <div className="projects-container">
       {projects.map((project, index) => (
         <div key={index} className="project-card">
-          <h3>{project.title}</h3>
-          <p>{project.description}</p>
+          <h3>{t(`profile.projects.${index}.title`)}</h3>
+          <p dangerouslySetInnerHTML={{ __html: t(`profile.projects.${index}.description`) }}></p>
           <div className="project-links">
             {project.githubLink && (
               <a href={project.githubLink} target="_blank" rel="noopener noreferrer">GitHub</a>

@@ -60,9 +60,9 @@ const Profile = () => {
             <Section title={t('skills')} ref={el => sectionRefs.current[3] = el}>
                 <Skills skills={profile.skills} />
             </Section>
-            {/* <Section title={t('projects')} ref={el => sectionRefs.current[4] = el}>
+            <Section title={t('projects')} ref={el => sectionRefs.current[4] = el}>
                 <Projects projects={profile.projects} />
-            </Section> */}
+            </Section>
             <Section title={t('accomplishments')} ref={el => sectionRefs.current[5] = el}>
                 <Accomplishments accomplishments={profile.accomplishments} />
             </Section>
