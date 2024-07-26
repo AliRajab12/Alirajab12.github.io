@@ -47,7 +47,7 @@
         {
             "degree": "MPhil, Software Engineering und Informationssysteme",
             "institution": "Universität Damaskus",
-            "duration": "März 2021 - September 2022"
+            "duration": "März 2021 - September 2022 (Nicht abgeschlossen)"
         },
         {
             "degree": "Bachelor, Information Engineering",
@@ -79,7 +79,14 @@
               "githubLink": "",
               "liveLink": "",
               "technologies": [".NET 6 (cross-platform)", "Bootstrap", "HTML","CSS","JS","SQL Server"]
-            }
+            },
+            {
+                "title": "Your Store",
+                "description": "- Umfassende E-Commerce-Mobile-App: Entwickelte eine funktionsreiche mobile Anwendung für E-Commerce mit Flutter.<br><br> - Produktsuche: Integrierte eine leistungsstarke Suchfunktion, die es den Benutzern ermöglicht, Produkte leicht zu finden.<br><br> - Favoritenverwaltung: Ermöglichte es den Benutzern, ihre Favoriten mühelos zu verwalten.<br><br> - Bestell und Warenkorbverwaltung: Bot nahtlose Bestellabwicklung und Warenkorbverwaltungsfunktionen.<br><br> - Bloc Design Pattern: Nutze das Bloc-Designmuster, um eine effiziente und skalierbare Verwaltung der Geschäftslogik der App zu gewährleisten.",
+                "githubLink": "https://github.com/AliRajab12/flutter_ecommerce_app",
+                "liveLink": "https://www.youtube.com/watch?v=rD8zsHczDuM&list=PLVHI1VUbMtuItLu2XErbvLjB3-k8h78ny&index=2",
+                "technologies": ["Flutter", "Dart", "SQLite","Figma"]
+              }
           ],
         "accomplishments": {
         "certifications": [
