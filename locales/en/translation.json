@@ -82,7 +82,7 @@
         },
         {
           "title": "Your Store",
-          "description": "- Comprehensive Ecommerce Mobile App: Developed a feature-rich mobile application for ecommerce using Flutter.<br><br> Product Search: Integrated a powerful search functionality, allowing users to easily find products.- Favorites Management: Enabled users to effortlessly manage their favorite items.<br><br> - Order and Cart Management: Provided seamless order processing and cart management capabilities.<br><br> - Bloc Design Pattern: Utilized the Bloc design pattern to ensure efficient and scalable management of the app's business logic.",
+          "description": "- Comprehensive Ecommerce Mobile App: Developed a feature-rich mobile application for ecommerce using Flutter.<br><br> - Product Search: Integrated a powerful search functionality, allowing users to easily find products.- Favorites Management: Enabled users to effortlessly manage their favorite items.<br><br> - Order and Cart Management: Provided seamless order processing and cart management capabilities.<br><br> - Bloc Design Pattern: Utilized the Bloc design pattern to ensure efficient and scalable management of the app's business logic.",
           "githubLink": "https://github.com/AliRajab12/flutter_ecommerce_app",
           "liveLink": "https://www.youtube.com/watch?v=rD8zsHczDuM&list=PLVHI1VUbMtuItLu2XErbvLjB3-k8h78ny&index=2",
           "technologies": ["Flutter", "Dart", "SQLite","Figma"]
