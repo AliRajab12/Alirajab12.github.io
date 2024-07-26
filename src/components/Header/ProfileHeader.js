@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './ProfileHeader.css';
+
 const ProfileHeader = ({ profile, onDownload, isGenerating }) => {
     const { t } = useTranslation();
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Helmet } from 'react-helmet';
 import './Profile.css';
 import ProfileHeader from '../components/Header/ProfileHeader';
 import Section from '../components/Section';
@@ -47,6 +48,14 @@ const Profile = () => {
 
     return (
         <div className="profile-container" id="profile-container">
+            {/* <Helmet> */}
+                <title>Ali Rajab</title>
+                {/* <meta name="description" content="Explore the portfolio of Ali Rajab, showcasing skills in software engineering, product management, and mobile app development (Flutter)." /> */}
+                {/* <meta property="og:title" content="My Portfolio | Software Engineer, Product Manager, Mobile App Developer, Flutter" /> */}
+                {/* <meta property="og:description" content="Explore the portfolio of Ali Rajab, showcasing skills in software engineering, product management, and mobile app development (Flutter)." /> */}
+                {/* <meta property="og:image" content="URL to an image" /> */}
+                {/* <meta property="og:url" content="URL of your portfolio" /> */}
+            {/* </Helmet> */}
             <ProfileHeader profile={profile} onDownload={handleDownload} isGenerating={isGeneratingPDF} t={t} />
             <Section title={t('about')} ref={el => sectionRefs.current[0] = el}>
                 <p dangerouslySetInnerHTML={{ __html: t('profile.summary') }}></p>
