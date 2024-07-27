@@ -14,7 +14,9 @@
     "i18next-http-backend": "^2.5.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-ga": "^3.3.1",
     "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.5",
     "react-i18next": "^15.0.0",
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
@@ -50,6 +52,7 @@
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "autoprefixer": "^10.4.19",
     "gh-pages": "^6.1.1",
-    "postcss": "^8.4.40"
+    "postcss": "^8.4.40",
+    "webpack-cli": "^5.1.4"
   }
 }
