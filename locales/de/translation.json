@@ -5,6 +5,7 @@
     "education": "Ausbildung",
     "skills": "Fähigkeiten",
     "projects": "Projekte",
+    "languages":"Sprachen",
     "profileHeader": {
         "downloadButton": "Als PDF herunterladen",
         "generatingPDF": "PDF wird generiert ..."
@@ -12,14 +13,14 @@
     "accomplishments": "Leistungen",
     "profile": {
         "name": "Ali Rajab",
-        "headline": "Software Engineer III | Produktmanager | Mobile App-Entwickler | Flutter | Java | Webentwickler | Laravel | React.js | Vue.js | Junior Blockchain-Entwickler | Solidity | Python",
+        "headline": "Software Engineer II | Produktmanager | Mobile App-Entwickler | Flutter | Java | Webentwickler | Laravel | React.js | Vue.js | Junior Blockchain-Entwickler | Solidity | Python",
         "location": "Gouvernement Hama, Syrien",
         "contact": {
         "email": "alirajab.dev@gmail.com",
         "phone": "+963-992840260",
         "linktree": "https://linktr.ee/alirajab"
         },
-        "summary": "Ein Lead Software Engineer mit mehr als fünf Jahren Berufserfahrung, ich habe eine nachgewiesene Erfolgsbilanz in der Softwareentwicklung in verschiedenen Bereichen, einschließlich wissenschaftlicher Forschung.<br><br> Ich zeichne mich durch die Leitung von Teams, die Entwicklung kosteneffektiver Lösungen und die Steigerung der Produktivität durch effektives Projektmanagement und klare Kommunikation aus.<br><br> Meine technische Expertise umfasst die Entwicklung von mobilen Anwendungen, Webentwicklung und Datenbankmanagement, mit einem starken Fokus auf die Bereitstellung hochwertiger, skalierbarer Systeme.<br><br> Ich bin leidenschaftlich daran interessiert, an Projekten zu arbeiten, die einen erheblichen Einfluss haben und Millionen von Nutzern zugutekommen.<br><br> Mein kollaborativer Ansatz, kombiniert mit meinen technischen Fähigkeiten, ermöglicht es mir, Lösungen zu schaffen, die die Benutzererfahrung und die betriebliche Effizienz verbessern.<br><br><b>Schlüsselkompetenzen:</b><br> Projektmanagement: Agile-Methoden, ClickUp, Jira<br> Mobile Entwicklung: Flutter, Dart, Java, UI/UX-Design, REST API-Integration, Firebase<br> Webentwicklung: C#, .Net Core, PHP, Laravel, JavaScript, Node.js, Vue.js, HTML/CSS, AWS<br> Datenbankmanagement: SQL Server, MySQL, SQLite, PostgreSQL, MongoDB<br><br> Fließend in Arabisch und Englisch, setze ich mich für kontinuierliches Lernen und berufliches Wachstum ein.<br><br> Für mehr über meine Arbeit und um Kontakt aufzunehmen, besuchen Sie mein <a href='https://linktr.ee/alirajab'>Linktree</a>.",
+        "summary": "Ein Software-Ingenieur mit über 3 Jahren Berufserfahrung in der Softwarebranche, 1,5 Jahren in der wissenschaftlichen Forschung und 6 Monaten freiberuflicher Tätigkeit, ich habe eine nachweisliche Erfolgsbilanz in der Softwareentwicklung in verschiedenen Bereichen, einschließlich Lieferung, Reisen und Informationsmanagement. Ich zeichne mich darin aus, Teams zu leiten, kosteneffiziente Lösungen zu entwickeln und die Produktivität durch effektives Projektmanagement und klare Kommunikation zu steigern. Meine technische Expertise umfasst die Entwicklung mobiler Anwendungen, Webentwicklung und Servermanagement, mit einem starken Fokus auf die Lieferung hochwertiger, skalierbarer Systeme. Ich bin leidenschaftlich daran interessiert, an Projekten zu arbeiten, die einen bedeutenden Einfluss haben und Millionen von Nutzern zugutekommen. Mein kollaborativer Ansatz, kombiniert mit meinen technischen Fähigkeiten, ermöglicht es mir, Lösungen zu schaffen, die die Benutzererfahrung und die betriebliche Effizienz verbessern.<br><br> Meine technische Expertise umfasst die Entwicklung mobiler Anwendungen, Webentwicklung und Servermanagement, mit einem starken Fokus auf die Lieferung hochwertiger, skalierbarer Systeme. Ich bin leidenschaftlich daran interessiert, an Projekten zu arbeiten, die einen bedeutenden Einfluss haben und Millionen von Nutzern zugutekommen. Mein kollaborativer Ansatz, kombiniert mit meinen technischen Fähigkeiten, ermöglicht es mir, Lösungen zu schaffen, die die Benutzererfahrung und die betriebliche Effizienz verbessern.<br><br> Meine technische Expertise umfasst die Entwicklung mobiler Anwendungen, Webentwicklung und Datenbankmanagement, mit einem starken Fokus auf die Lieferung hochwertiger, skalierbarer Systeme.<br><br> Ich bin leidenschaftlich daran interessiert, an Projekten zu arbeiten, die einen bedeutenden Einfluss haben und Millionen von Nutzern zugutekommen.<br><br> Mein kollaborativer Ansatz, kombiniert mit meinen technischen Fähigkeiten, ermöglicht es mir, Lösungen zu schaffen, die die Benutzererfahrung und die betriebliche Effizienz verbessern.<br><br><b>Wichtige Fähigkeiten:</b><br> Projektmanagement: Agile Methoden, ClickUp, Jira<br> Mobile Entwicklung: Flutter, Dart, Java, UI/UX-Design, REST API-Integration, Firebase<br> Webentwicklung: C#, .Net Core, PHP, Laravel, JavaScript, Node.js, Vue.js, HTML/CSS, AWS<br> Datenbankmanagement: SQL Server, MySQL, SQLite, PostgreSQL, MongoDB<br><br> Fließend in Arabisch und Englisch, engagiere ich mich für kontinuierliches Lernen und berufliches Wachstum.<br><br> Für mehr über meine Arbeit und um in Kontakt zu treten, besuchen Sie mein <a href='https://linktr.ee/alirajab'>Linktree</a>.",
         "experience": [
         {
             "job_title": "Lead Software Engineer",
@@ -92,11 +93,11 @@
         "certifications": [
             "IBM Data Science Professional Certificate",
             "Dankesschreiben von der Allgemeinen Elektrizitätsgesellschaft"
-        ],
+        ]
+        },
         "languages": [
             "Arabisch",
             "Englisch"
         ]
-        }
     }
 }

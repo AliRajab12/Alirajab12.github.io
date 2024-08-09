@@ -6,20 +6,21 @@
     "skills": "Skills",
     "projects": "Projects",
     "accomplishments": "Accomplishments",
+    "languages":"Languages",
     "profileHeader":{
         "downloadButton":"Download as a PDF",
         "generatingPDF":"Generating PDF ..."
     },
     "profile": {
       "name": "Ali Rajab",
-      "headline": "Software Engineer III | Product Manager | Mobile Application Developer | Flutter | Java | Web Developer | Laravel | React.js | Vue.js | Junior Blockchain Developer | Solidity | Python",
+      "headline": "Software Engineer II | Product Manager | Mobile Application Developer | Flutter | Java | Web Developer | Laravel | React.js | Vue.js | Junior Blockchain Developer | Solidity | Python",
       "location": "Hama Governorate, Syria",
       "contact": {
         "email": "alirajab.dev@gmail.com",
         "phone": "+963-992840260",
         "linktree": "https://linktr.ee/alirajab"
       },
-      "summary": "A Lead Software Engineer with over five years of professional experience, I have a proven track record in software development across various domains, including scientific research.<br><br> I excel at leading teams, developing cost-efficient solutions, and enhancing productivity through effective project management and clear communication.<br><br> My technical expertise spans mobile application development, web development, and database management, with a strong focus on delivering high-quality, scalable systems.<br><br> I am passionate about working on projects that have a significant impact and benefit millions of users.<br><br> My collaborative approach, combined with my technical skills, allows me to create solutions that improve user experience and operational efficiency.<br><br><b>Key Skills:</b><br> Project Management: Agile methodologies, ClickUp, Jira<br> Mobile Development: Flutter, Dart, Java, UI/UX design, REST API integration, Firebase<br> Web Development: C#, .Net core, PHP, Laravel, JavaScript, Node.js, Vue.js, HTML/CSS, AWS<br> Database Management: SQL Server, MySQL, SQLite, PostgreSQL, MongoDB<br><br> Fluent in both Arabic and English, I am committed to continuous learning and professional growth.<br><br> For more about my work and to connect, visit my <a href='https://linktr.ee/alirajab'>Linktree</a>.",
+      "summary": "A Software Engineer with 3+ years of professional experience in software industry, 1.5 years in scientific research and 6 months of freelancing, I have a proven track record in software development across various domains, including Delivery, Travel and Information Management. I excel at leading teams, developing cost-efficient solutions, and enhancing productivity through effective project management and clear communication. My technical expertise spans mobile application development, web development, and server management, with a strong focus on delivering high-quality, scalable systems. I am passionate about working on projects that have a significant impact and benefit millions of users. My collaborative approach, combined with my technical skills, allows me to create solutions that improve user experience and operational efficiency.<br><br> My technical expertise spans mobile application development, web development, and server management, with a strong focus on delivering high-quality, scalable systems. I am passionate about working on projects that have a significant impact and benefit millions of users. My collaborative approach, combined with my technical skills, allows me to create solutions that improve user experience and operational efficiency.<br><br> My technical expertise spans mobile application development, web development, and database management, with a strong focus on delivering high-quality, scalable systems.<br><br> I am passionate about working on projects that have a significant impact and benefit millions of users.<br><br> My collaborative approach, combined with my technical skills, allows me to create solutions that improve user experience and operational efficiency.<br><br><b>Key Skills:</b><br> Project Management: Agile methodologies, ClickUp, Jira<br> Mobile Development: Flutter, Dart, Java, UI/UX design, REST API integration, Firebase<br> Web Development: C#, .Net core, PHP, Laravel, JavaScript, Node.js, Vue.js, HTML/CSS, AWS<br> Database Management: SQL Server, MySQL, SQLite, PostgreSQL, MongoDB<br><br> Fluent in both Arabic and English, I am committed to continuous learning and professional growth.<br><br> For more about my work and to connect, visit my <a href='https://linktr.ee/alirajab'>Linktree</a>.",
       "experience": [
         {
           "job_title": "Lead Software Engineer",
@@ -92,12 +93,12 @@
         "certifications": [
           "IBM Data Science Professional Certificate",
           "Thanks letter from The General Electricity Company"
-        ],
-        "languages": [
-          "Arabic",
-          "English"
         ]
-      }
+      },
+      "languages": [
+        "Arabic",
+        "English"
+      ]
     }
   }
   
