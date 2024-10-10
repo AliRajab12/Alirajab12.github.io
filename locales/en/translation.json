@@ -27,14 +27,14 @@
             "company": "Axis X Group",
             "duration": "08/2023 – 02/2024",
             "location": "Erbil, Iraq",
-            "description": "• Led a 9-person cross-functional team, increasing overall productivity by 75% through process automation and collaboration.<br><br>• Boosted user base by 50% across 3 mobile apps and 1 website through the UI/UX, performance and usability enhancements.<br><br>• Slashed follow-up users calls by 90%, significantly improving user satisfaction and reducing support costs.<br><br>• Optimized server performance by refactoring 10+ APIs, resulting in an 80% decrease in server load.<br><br>• Implemented cost-efficient OTP solutions, generating over $1000 in annual savings.<br><br>- Tech: ClickUp, Flutter, Laravel, Linux, Github, JMeter, GetX, Google Maps, Firebase."
+            "description": "• Led and mentored cross-functional teams (mobile, frontend, backend) in delivering features across 3 mobile apps and 1 website, resulting in a 75% increase in productivity and 50% growth in user base. <br><br>• Orchestrated efficient project management using ClickUp and streamlined Git repository management for multiple codebases, improving team collaboration and reducing feature delivery time by 80%. <br><br>• Transformed stakeholder requirements into technical specifications, prioritizing high-impact features that reduced customer (Merchant, Client, Delivery Man) support calls by 90%. <br><br>• Optimized system architecture by refactoring 10+ critical APIs decreasing server load by 80%. <br><br>• Established cost-effective solutions, including OTP implementation, generating $1000 monthly savings while maintaining robust security standards. <br><br>- Tech: ClickUp, Flutter, Laravel, Linux, Github, JMeter, GetX, Google Maps, Firebase."
         },
         {
             "job_title": "Full Stack Developer",
             "company": "Balafrreen",
             "duration": "12/2022 – 08/2023",
             "location": "Erbil, Iraq",
-            "description": "• Increased data accessibility by 80% and reduced server latency by 50% through backend and cloud optimizations.<br><br>• Processed and optimized over 10,000 rows of flight, airport, and airline data, improving app response times by 90%.<br><br>• Drove a 35% increase in app user base by implementing social sign-in options (Google, Apple, Facebook).<br><br>• Managed the app's life cycle from development to launch on the App Store and Google Play , ensuring a seamless user journey.<br><br>- Tech: Flutter, AWS, BloC, Clean Architecture, Node.js, XCode, UI/UX."
+            "description": "• Increased data accessibility by 80% and reduced server latency by 50% through backend and cloud optimizations.<br><br>• Processed and optimized over 10,000 rows of flight, airport, and airline data, improving app response times by 90%.<br><br>• Drove a 35% increase in app user base by implementing social sign-in options (Google, Apple, Facebook).<br><br>• Managed the app's life cycle from development to launch on the App Store and Google Play , ensuring a seamless user journey.<br><br>• Tech: Flutter, BloC, Clean Architecture, AWS, JavaScript, XCode, HIVE"
         },
         {
             "job_title": "Junior Software Engineer",
