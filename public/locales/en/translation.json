@@ -1,103 +1,103 @@
 {
-    "welcome_message": "Welcome to my portfolio",
-    "about": "About",
-    "experience": "Experience",
-    "education": "Education",
-    "skills": "Skills",
-    "projects": "Projects",
-    "accomplishments": "Accomplishments",
-    "profileHeader":{
-        "downloadButton":"Download as a PDF",
-        "generatingPDF":"Generating PDF ..."
+  "welcome_message": "Welcome to my portfolio",
+  "about": "About",
+  "experience": "Experience",
+  "education": "Education",
+  "skills": "Skills",
+  "projects": "Projects",
+  "accomplishments": "Accomplishments",
+  "languages":"Languages",
+  "profileHeader":{
+      "downloadButton":"Download as a PDF",
+      "generatingPDF":"Generating PDF ..."
+  },
+  "profile": {
+    "name": "Ali Rajab",
+    "headline": "Software Engineer II | Product Manager | Mobile Application Developer | Flutter | Java | Web Developer | Laravel | React.js | Vue.js | Junior Blockchain Developer | Solidity | Python",
+    "location": "Hama Governorate, Syria",
+    "contact": {
+      "email": "alirajab.dev@gmail.com",
+      "phone": "+963-992840260",
+      "linktree": "https://linktr.ee/alirajab"
     },
-    "profile": {
-      "name": "Ali Rajab",
-      "headline": "Software Engineer III | Product Manager | Mobile Application Developer | Flutter | Java | Web Developer | Laravel | React.js | Vue.js | Junior Blockchain Developer | Solidity | Python",
-      "location": "Hama Governorate, Syria",
-      "contact": {
-        "email": "alirajab.dev@gmail.com",
-        "phone": "+963-992840260",
-        "linktree": "https://linktr.ee/alirajab"
-      },
-      "summary": "A Lead Software Engineer with over five years of professional experience, I have a proven track record in software development across various domains, including scientific research.<br><br> I excel at leading teams, developing cost-efficient solutions, and enhancing productivity through effective project management and clear communication.<br><br> My technical expertise spans mobile application development, web development, and database management, with a strong focus on delivering high-quality, scalable systems.<br><br> I am passionate about working on projects that have a significant impact and benefit millions of users.<br><br> My collaborative approach, combined with my technical skills, allows me to create solutions that improve user experience and operational efficiency.<br><br><b>Key Skills:</b><br> Project Management: Agile methodologies, ClickUp, Jira<br> Mobile Development: Flutter, Dart, Java, UI/UX design, REST API integration, Firebase<br> Web Development: C#, .Net core, PHP, Laravel, JavaScript, Node.js, Vue.js, HTML/CSS, AWS<br> Database Management: SQL Server, MySQL, SQLite, PostgreSQL, MongoDB<br><br> Fluent in both Arabic and English, I am committed to continuous learning and professional growth.<br><br> For more about my work and to connect, visit my <a href='https://linktr.ee/alirajab'>Linktree</a>.",
-      "experience": [
-        {
-          "job_title": "Lead Software Engineer",
+    "summary": "Results-driven Software Engineer with 4+ years of professional experience in software industry, I have a proven track record in software development across various domains, including Delivery, Travel and Information Management Systems. I excel at leading teams, developing cost-efficient solutions, and enhancing productivity through effective project management and clear communication. My technical expertise spans mobile application development, web development, and server management, with a strong focus on delivering high-quality, scalable systems. I am passionate about working on projects that have a significant impact and benefit millions of users. My collaborative approach, combined with my technical skills, allows me to create solutions that improve user experience and operational efficiency.<br><br> My technical expertise spans mobile application development, web development, and server management, with a strong focus on delivering high-quality, scalable systems. I am passionate about working on projects that have a significant impact and benefit millions of users. My collaborative approach, combined with my technical skills, allows me to create solutions that improve user experience and operational efficiency.<br><br> My technical expertise spans mobile application development, web development, and database management, with a strong focus on delivering high-quality, scalable systems.<br><br> I am passionate about working on projects that have a significant impact and benefit millions of users.<br><br> My collaborative approach, combined with my technical skills, allows me to create solutions that improve user experience and operational efficiency.<br><br><b>Key Skills:</b><br> Project Management: Agile methodologies, ClickUp, Jira<br> Mobile Development: Flutter, Dart, Java, UI/UX design, REST API integration, Firebase<br> Web Development: C#, .Net core, PHP, Laravel, JavaScript, Node.js, Vue.js, HTML/CSS, AWS<br> Database Management: SQL Server, MySQL, SQLite, PostgreSQL, MongoDB<br><br> Fluent in both Arabic and English, I am committed to continuous learning and professional growth.<br><br> For more about my work and to connect, visit my <a href='https://linktr.ee/alirajab'>Linktree</a>.",
+    "experience": [
+      {
+          "job_title": "Technical Project Lead",
           "company": "Axis X Group",
-          "duration": "August 2023 - February 2024",
-          "location": "Erbil Governorate, Iraq",
-          "description": "- Supervised a team of 9 developers to effectively manage a delivery system, ensuring seamless operations and delivery of high-quality applications. <br><br> - Developed cost-efficient solutions, optimizing resource utilization and saving over $1000.<br><br> - Distributed tasks among team members, monitored progress, and addressed challenges to maintain project timelines, resulting in a 50% productivity increase.<br><br> - Acted as a liaison between the development team and stakeholders, ensuring clear communication and goal alignment, boosting productivity by 75%.<br><br> - Enhanced the server performance decreasing the load by 80% by editing 10+ APIs.<br><br> - <b>Tech: ClickUp, Flutter, Laravel, Linux, Github, JMeter</b>"
-        },
-        {
-          "job_title": "Full Stack Mobile Developer",
-          "company": "Balafrreen Travel and Education Services Company Ltd.",
-          "duration": "December 2022 - August 2023",
-          "location": "Erbil, Erbil Governorate, Iraq",
-          "description": "- Improved data accessibility by 80% and server performance by 50%, reducing latency through collaboration with the backend team.<br><br> - Analyzed and processed over 10,000 rows of data for flight, airport, and airline, optimizing app display. <br><br> - Collaborated with the UI/UX team to enhance user experience, benefiting over 10,000 app users. <br><br> - Increased app user base by 35% by integrating Google, Apple, and Facebook sign-in options. <br><br> - Managed the app’s lifecycle from development to launch on the App Store and Google Play, ensuring a seamless user journey.<br><br> - <b>Tech: Flutter, AWS, Google Play, App Store, Node.js</b>"
-        },
-        {
-          "job_title": "System Analysis & Developer",
-          "company": "The General Electricity Company",
-          "duration": "November 2019 - July 2020",
-          "location": "Homs Governorate, Syria",
-          "description": "- Created the required UML diagrams and ERD database diagram (+5) to meet stakeholders’ requirements and achieve scalable and maintainable system. <br><br> - Worked with a 2-person team to implement backend and frontend requirements. v<br><br> - Implemented FCM to automatically notify clients upon complaint resolution, reducing follow-up calls by 40% and improving customer satisfaction scores by 50%. <br><br> - <b>Tech: Ionic Framework, Visual Paradigm, MySQL, Laravel, Firebase Cloud Messaging (FCM)</b>"
-        }
-      ],
-      "education": [
-        {
-          "degree": "MPhil, Software Engineering and Information Systems",
-          "institution": "Damascus University",
-          "duration": "March 2021 - September 2022 (Not completed)"
-        },
-        {
-          "degree": "Bachelor, Information Engineering",
-          "institution": "Al-Baath University",
-          "duration": "September 2015 - October 2020"
-        }
-      ],
-      "skills": {
-        "Project Management": {
-          "Proficient": ["Team Leadership", "Agile", "ClickUp"],
-          "Familiar": ["Jira"]
-        },
-        "Mobile Application Development": {
-          "Proficient": ["Flutter", "Dart", "Java", "UI/UX design", "REST API integration", "Firebase", "Google Play", "App Store", "App Gallery", "POS (SUNMI)", "Figma", "XCode", "JSON"],
-          "Familiar": ["Swift", "Objective-C"]
-        },
-        "Web Development": {
-          "Proficient": ["C#", ".Net core", "Postman", "PHP", "Laravel", "JavaScript", "Node.js", "Vue.js", "HTML/CSS", "Bootstrap", "Tailwind CSS", "Linux", "Server Administration", "AWS", "Git", "Github", "Gitlab", "Pinia"],
-          "Familiar": ["Typescript", "React.js", "Next.js"]
-        },
-        "Database Management": {
-          "Proficient": ["SQL Server", "MSSQL", "MySQL", "SQLite", "PostgreSQL", "MongoDB"]
-        }
+          "duration": "08/2023 – 02/2024",
+          "location": "Erbil, Iraq",
+          "description": "• Led and mentored cross-functional teams (mobile, frontend, backend) in delivering features across 3 mobile apps and 1 website, resulting in a 75% increase in productivity and 50% growth in user base. <br><br>• Orchestrated efficient project management using ClickUp and streamlined Git repository management for multiple codebases, improving team collaboration and reducing feature delivery time by 80%. <br><br>• Transformed stakeholder requirements into technical specifications, prioritizing high-impact features that reduced customer (Merchant, Client, Delivery Man) support calls by 90%. <br><br>• Optimized system architecture by refactoring 10+ critical APIs decreasing server load by 80%. <br><br>• Established cost-effective solutions, including OTP implementation, generating $1000 monthly savings while maintaining robust security standards. <br><br>- Tech: ClickUp, Flutter, Laravel, Linux, Github, JMeter, GetX, Google Maps, Firebase."
       },
-      "projects": [
-        {
-          "title": "Flight Ticket Reservation System",
-          "description": "- Built a dashboard for administrators to manage flights, reservations, users, and thier roles(+3).<br><br> - Enabled users to search among flights, make reservations, and manage their reservations.<br><br> - Utilized the Code-First approach to design and manage a database with 6+ tables in MSSQL.<br><br> - Implemented Razor page model for managing 15+ website pages and their associated logic.<br><br> - Added multilingual support for Arabic and English, catering to a diverse user base.",
-          "githubLink": "",
-          "liveLink": "",
-          "technologies": [".NET 6 (cross-platform)", "Bootstrap", "HTML","CSS","JS","SQL Server"]
-        },
-        {
-          "title": "Your Store",
-          "description": "- Comprehensive Ecommerce Mobile App: Developed a feature-rich mobile application for ecommerce using Flutter.<br><br> - Product Search: Integrated a powerful search functionality, allowing users to easily find products.- Favorites Management: Enabled users to effortlessly manage their favorite items.<br><br> - Order and Cart Management: Provided seamless order processing and cart management capabilities.<br><br> - Bloc Design Pattern: Utilized the Bloc design pattern to ensure efficient and scalable management of the app's business logic.",
-          "githubLink": "https://github.com/AliRajab12/flutter_ecommerce_app",
-          "liveLink": "https://www.youtube.com/watch?v=rD8zsHczDuM&list=PLVHI1VUbMtuItLu2XErbvLjB3-k8h78ny&index=2",
-          "technologies": ["Flutter", "Dart", "SQLite","Figma"]
-        }
-      ],
-      "accomplishments": {
-        "certifications": [
-          "IBM Data Science Professional Certificate",
-          "Thanks letter from The General Electricity Company"
-        ],
-        "languages": [
-          "Arabic",
-          "English"
-        ]
+      {
+          "job_title": "Full Stack Developer",
+          "company": "Balafrreen",
+          "duration": "12/2022 – 08/2023",
+          "location": "Erbil, Iraq",
+          "description": "• Increased data accessibility by 80% and reduced server latency by 50% through backend and cloud optimizations.<br><br>• Processed and optimized over 10,000 rows of flight, airport, and airline data, improving app response times by 90%.<br><br>• Drove a 35% increase in app user base by implementing social sign-in options (Google, Apple, Facebook).<br><br>• Managed the app's life cycle from development to launch on the App Store and Google Play , ensuring a seamless user journey.<br><br>• Tech: Flutter, BloC, Clean Architecture, AWS, JavaScript, XCode, HIVE"
+      },
+      {
+          "job_title": "Junior Software Engineer",
+          "company": "The General Electricity Company",
+          "duration": "11/2019 – 07/2020",
+          "location": "Homs, Syria",
+          "description": "• Designed 5+ UML and ERD diagrams, reducing system architecture complexity by 30%.<br><br>• Decreased development time by 50% through efficient backend and frontend implementation in a 2-person team.<br><br>• Integrated FCM, cutting follow-up calls by 40% and boosting customer satisfaction scores by 50%.<br><br>- Tech: Ionic Framework, Visual Paradigm, MySQL, Laravel, Firebase Cloud Messaging (FCM)."
       }
-    }
+  ],
+    "education": [
+      {
+        "degree": "MPhil, Software Engineering and Information Systems",
+        "institution": "Damascus University",
+        "duration": "March 2021 - September 2022 (Not completed)"
+      },
+      {
+        "degree": "Bachelor, Information Engineering",
+        "institution": "Al-Baath University",
+        "duration": "September 2015 - October 2020"
+      }
+    ],
+    "skills": {
+      "Project Management": {
+        "Proficient": ["Team Leadership", "Agile", "ClickUp"],
+        "Familiar": ["Jira"]
+      },
+      "Mobile Application Development": {
+        "Proficient": ["Flutter", "Dart", "Java", "UI/UX design", "REST API integration", "Firebase", "Google Play", "App Store", "App Gallery", "POS (SUNMI)", "Figma", "XCode", "JSON"],
+        "Familiar": ["Swift", "Objective-C"]
+      },
+      "Web Development": {
+        "Proficient": ["C#", ".Net core", "Postman", "PHP", "Laravel", "JavaScript", "Node.js", "Vue.js", "HTML/CSS", "Bootstrap", "Tailwind CSS", "Linux", "Server Administration", "AWS", "Git", "Github", "Gitlab", "Pinia"],
+        "Familiar": ["Typescript", "React.js", "Next.js"]
+      },
+      "Database Management": {
+        "Proficient": ["SQL Server", "MSSQL", "MySQL", "SQLite", "PostgreSQL", "MongoDB"]
+      }
+    },
+    "projects": [
+      {
+        "title": "Flight Ticket Reservation System",
+        "description": "- Built a dashboard for administrators to manage flights, reservations, users, and thier roles(+3).<br><br> - Enabled users to search among flights, make reservations, and manage their reservations.<br><br> - Utilized the Code-First approach to design and manage a database with 6+ tables in MSSQL.<br><br> - Implemented Razor page model for managing 15+ website pages and their associated logic.<br><br> - Added multilingual support for Arabic and English, catering to a diverse user base.",
+        "githubLink": "",
+        "liveLink": "",
+        "technologies": [".NET 6 (cross-platform)", "Bootstrap", "HTML","CSS","JS","SQL Server"]
+      },
+      {
+        "title": "Your Store",
+        "description": "- Comprehensive Ecommerce Mobile App: Developed a feature-rich mobile application for ecommerce using Flutter.<br><br> - Product Search: Integrated a powerful search functionality, allowing users to easily find products.- Favorites Management: Enabled users to effortlessly manage their favorite items.<br><br> - Order and Cart Management: Provided seamless order processing and cart management capabilities.<br><br> - Bloc Design Pattern: Utilized the Bloc design pattern to ensure efficient and scalable management of the app's business logic.",
+        "githubLink": "https://github.com/AliRajab12/flutter_ecommerce_app",
+        "liveLink": "https://www.youtube.com/watch?v=rD8zsHczDuM&list=PLVHI1VUbMtuItLu2XErbvLjB3-k8h78ny&index=2",
+        "technologies": ["Flutter", "Dart", "SQLite","Figma"]
+      }
+    ],
+    "accomplishments": {
+      "certifications": [
+        "IBM Data Science Professional Certificate",
+        "Thanks letter from The General Electricity Company"
+      ]
+    },
+    "languages": [
+      "Arabic",
+      "English"
+    ]
   }
-  
+}

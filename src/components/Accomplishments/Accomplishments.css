@@ -1,0 +1,25 @@
+.accomplishment-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.accomplishment-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.accomplishment-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #666;
+}
+.accomplishment-list li {
+    margin-bottom: 8px;
+    padding-left: 15px;
+
+    @media (max-width: 768px) {
+        padding-left: 10px;
+    }
+}

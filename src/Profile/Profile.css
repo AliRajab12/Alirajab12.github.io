@@ -3,38 +3,20 @@
     margin: 0 auto;
     padding: 40px;
     font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
+    background-color: var(--secondary-color); /* Background color based on theme */
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-
-    @media (max-width: 960px) {
-        padding: 30px;
-    }
-
-    @media (max-width: 768px) {
-        padding: 20px;
-        border-radius: 0;
-        box-shadow: none;
-    }
+    color: var(--text-color); /* Text color based on theme */
 }
 
 .profile-container:hover {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-
 .profile-content {
     display: grid;
     gap: 20px;
-
-    @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr; 
-    }
-
-    @media (min-width: 1024px) {
-        grid-template-columns: repeat(3, 1fr); 
-    }
 }
 
 .profile-section {
@@ -42,10 +24,6 @@
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease;
-
-    @media (max-width: 768px) {
-        margin-bottom: 30px;
-    }
 }
 
 .profile-section.visible {
@@ -54,128 +32,36 @@
 }
 
 .profile-section h2 {
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 2px solid var(--section-heading-border); /* Primary color for section headings */
     padding-bottom: 10px;
-    color: #444;
+    color: var(--text-color); /* Dark gray text for headings */
 }
 
-.experience-item, .education-item {
-    margin-bottom: 25px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.experience-item:hover, .education-item:hover {
-    background-color: #f0f0f0;
-}
-
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skill-item {
-    background: #e1e1e1;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 0.9em;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.skill-item:hover {
-    background-color: #d0d0d0;
-    transform: translateY(-2px);
-}
-.skill-category {
-    margin-bottom: 30px;
-
-    @media (max-width: 768px) {
-        margin-bottom: 20px;
-    }
-}
-.skill-category h3 {
-    margin: 20px 0 10px;
-    color: #555;
-}
-
-.accomplishment-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.accomplishment-list li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.accomplishment-list li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: #666;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}.experience-item, .education-item {
-    margin-bottom: 20px;
-    padding: 15px;
-
-    @media (max-width: 768px) {
-        padding: 10px;
-    }
-}
-
-.accomplishment-list li {
-    margin-bottom: 8px;
-    padding-left: 15px;
-
-    @media (max-width: 768px) {
-        padding-left: 10px;
-    }
-}
-.download-button {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-.download-button:hover {
-    background-color: #0056b3;
-}.language-switch-overlay {
+/* Additional styles for the ScrollToTopButton component */
+.scroll-to-top-button {
     position: fixed;
-    top: 50%;
+    bottom: 20px;
     right: 20px;
-    transform: translateY(-50%);
-    z-index: 1000; 
-}
-
-.language-switch-button {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: var(--scroll-to-top-button-bg); /* Primary color for button background */
+    color: var(--button-text); /* White text color for contrast */
     border: none;
-    padding: 10px 20px;
-    font-size: 1em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.language-switch-button:hover {
-    background-color: #0056b3;
+.scroll-to-top-button:hover {
+    background-color: var(--scroll-to-top-button-hover); /* Slightly darker shade on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-to-top-button::before {
+    content: '↑'; /* Arrow icon for the button */
+    font-size: 24px;
 }

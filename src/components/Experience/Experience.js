@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-
+import "./Experience.css";
 const Experience = ({ experience }) => {
     const { t } = useTranslation();
 

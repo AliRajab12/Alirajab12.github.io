@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./Accomplishments.css";
 const Accomplishments = ({ accomplishments }) => (
     <>
         <div>
@@ -10,14 +10,7 @@ const Accomplishments = ({ accomplishments }) => (
                 ))}
             </ul>
         </div>
-        <div>
-            <h3>Languages</h3>
-            <ul className="accomplishment-list">
-                {accomplishments.languages.map((lang, index) => (
-                    <li key={index}>{lang}</li>
-                ))}
-            </ul>
-        </div>
+       
     </>
 );
 

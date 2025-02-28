@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./Skills.css";
 const Skills = ({ skills }) => (
     <div className="skills-list">
         {Object.keys(skills).map((category, index) => (

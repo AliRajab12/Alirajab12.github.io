@@ -6,17 +6,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f8f9fa; /* Light background for contrast */
+    background-color: var(--secondary-color); /* White background for contrast */
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 150px; /* Fixed width for the container */
     z-index: 9999; /* High z-index to ensure it stays on top */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.language-switcher.hidden {
+    opacity: 0;
+    transform: translateY(-60%);
+    pointer-events: none; /* Prevent interactions when hidden */
+}
+
+.language-switcher.visible {
+    opacity: 1;
+    transform: translateY(-50%);
+    pointer-events: auto; /* Allow interactions when visible */
 }
 
 .language-button {
-    background-color: #007bff; /* Primary color */
-    color: white;
+    background-color: var(--primary-color); /* Primary color */
+    color: var(--secondary-color); /* White text color */
     border: none;
     border-radius: 4px;
     padding: 10px;
@@ -29,17 +42,17 @@
 }
 
 .language-button:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: var(--hover-color); /* Slightly darker shade on hover */
     transform: scale(1.05); /* Slightly increase button size on hover */
 }
 
 .language-button:active {
-    background-color: #003d7a; /* Even darker shade on click */
+    background-color: darken(var(--primary-color), 20%); /* Even darker shade on click (using SCSS) */
 }
 
 @media (max-width: 768px) {
     .language-switcher {
-        width: 120px; /* Adjust width for smaller screens */
+        width: 60px; /* Adjust width for smaller screens */
         right: 10px; /* Less space on smaller screens */
     }
 

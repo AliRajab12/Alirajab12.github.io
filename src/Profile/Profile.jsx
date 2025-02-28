@@ -4,14 +4,16 @@ import './Profile.css';
 import ProfileHeader from '../components/Header/ProfileHeader';
 import Section from '../components/Section';
 import Experience from '../components/Experience/Experience';
-import Education from '../components/Education';
-import Skills from '../components/Skills';
+import Education from '../components/Education/Education';
+import Skills from '../components/Skills/Skills';
 import Projects from '../components/Projects/Projects'; 
-import Accomplishments from '../components/Accomplishments';
+import Accomplishments from '../components/Accomplishments/Accomplishments';
+import Languages from '../components/Languages/Languages';
 import { staticProfile } from '../utils/profileData';
 import { downloadProfileAsPDF } from '../utils/pdfUtils';
 import { useTranslation } from 'react-i18next';
-
+import ScrollToTopButton from '../components/ScrollToTopButton/ScrollToTopButton'; 
+import ReactGA from 'react-ga';
 const addVisibleClass = (entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -41,6 +43,10 @@ const Profile = () => {
 
     const handleDownload = useCallback(() => {
         setIsGeneratingPDF(true);
+        ReactGA.event({
+            category: 'User',
+            action: 'Downloaded PDF',
+        });
         downloadProfileAsPDF('profile-container').finally(() => setIsGeneratingPDF(false));
     }, []);
 
@@ -53,7 +59,6 @@ const Profile = () => {
                 <meta name="description" content="Explore the portfolio of Ali Rajab, showcasing skills in software engineering, product management, and mobile app development (Flutter)." />
                 <meta property="og:title" content="My Portfolio | Software Engineer, Product Manager, Mobile App Developer, Flutter" />
                 <meta property="og:description" content="Explore the portfolio of Ali Rajab, showcasing skills in software engineering, product management, and mobile app development (Flutter)." />
-                {/* <meta property="og:image" content="URL to an image" /> */}
                 <meta property="og:url" content="https://alirajab12.github.io/" />
             </Helmet>
             <ProfileHeader profile={profile} onDownload={handleDownload} isGenerating={isGeneratingPDF} t={t} />
@@ -75,6 +80,10 @@ const Profile = () => {
             <Section title={t('accomplishments')} ref={el => sectionRefs.current[5] = el}>
                 <Accomplishments accomplishments={profile.accomplishments} />
             </Section>
+            <Section title={t('languages')} ref={el => sectionRefs.current[6] = el}>
+                <Languages languages={profile.languages} />
+            </Section>
+            <ScrollToTopButton /> 
         </div>
     );
 };

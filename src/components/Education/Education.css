@@ -1,0 +1,18 @@
+.education-item {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: var(--card-background); /* Background color based on theme */
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    color: var(--card-text-color); /* Text color based on theme */
+}
+
+.education-item:hover {
+    background-color: var(--card-background-hover); /* Slightly different background on hover */
+}
+
+@media (max-width: 768px) {
+    .education-item {
+        padding: 10px;
+    }
+}

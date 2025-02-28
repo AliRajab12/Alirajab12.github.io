@@ -4,10 +4,14 @@ import { useTranslation } from 'react-i18next';
 
 const Projects = ({ projects }) => {
   const { t } = useTranslation();
+
   return (
     <div className="projects-container">
       {projects.map((project, index) => (
-        <div key={index} className="project-card">
+        <div
+          key={index}
+          className="project-card"
+        >
           <h3>{t(`profile.projects.${index}.title`)}</h3>
           <p dangerouslySetInnerHTML={{ __html: t(`profile.projects.${index}.description`) }}></p>
           <div className="project-links">
