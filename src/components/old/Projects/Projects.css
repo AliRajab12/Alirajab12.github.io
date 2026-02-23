@@ -1,0 +1,85 @@
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted min-width */
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--background-color); /* Background color based on theme */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.project-card {
+  position: relative;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transitions */
+  overflow: hidden;
+  color: var(--card-text-color); /* Text color based on theme */
+  background: var(--card-background); /* Card background */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out content */
+  min-height: 250px; /* Ensure card has a minimum height */
+}
+
+.project-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem; /* Slightly decreased font size */
+  font-weight: 600;
+  color: var(--primary-color); /* Primary color for headings */
+}
+
+.project-card p {
+  font-size: 1rem; /* Font size */
+  line-height: 1.6; /* Line height */
+  margin: 10px 0;
+  flex-grow: 1; /* Allow paragraph to take available space */
+}
+
+.project-links {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: var(--link-color); /* Link color */
+  font-weight: 500;
+  border: 1px solid var(--link-color); /* Link border */
+  padding: 10px 14px;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.project-links a:hover {
+  background-color: var(--link-hover-background); /* Hover background color */
+  color: var(--secondary-color); /* Text color on hover */
+  transform: scale(1.05);
+}
+
+.project-technologies {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-tag {
+  background-color: var(--tech-tag-background); /* Tag background */
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  color: var(--primary-color); /* Tag text color */
+  border: 1px solid var(--tech-tag-border); /* Tag border */
+}
+
+.tech-tag img {
+  margin-right: 5px;
+  width: 20px;
+  height: auto;
+}

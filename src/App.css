@@ -184,9 +184,18 @@ p {
 
 /* Focus styles for accessibility */
 *:focus-visible {
-  outline: 2px solid var(--primary-color);
-  outline-offset: 2px;
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
   border-radius: 4px;
+}
+
+/* Button/link specific focus */
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 3px;
+  border-radius: 6px;
+  box-shadow: 0 0 0 5px rgba(12, 155, 161, 0.15);
 }
 
 /* Selection styles */

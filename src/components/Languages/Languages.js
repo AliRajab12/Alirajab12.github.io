@@ -1,15 +1,46 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+
+const levelEmoji = {
+    'Native': '🌟',
+    'Professional': '💼',
+    'Conversational': '💬',
+    'Basic': '📚',
+};
 
 const Languages = ({ languages }) => {
-    const { t } = useTranslation();
     return (
-        <div>
-            <ul className="accomplishment-list">
-                {languages.map((lang, index) => (
-                    <li key={index}>{t(`profile.languages.${lang}`, { defaultValue: lang })}</li>
-                ))}
-            </ul>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
+            {languages.map((lang, index) => {
+                // Support both old string format and new object format
+                const name  = typeof lang === 'string' ? lang : lang.name;
+                const level = typeof lang === 'string' ? null : lang.level;
+                return (
+                    <div key={index} style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        padding: '10px 18px',
+                        background: 'var(--card-background)',
+                        border: '1px solid rgba(12,155,161,0.2)',
+                        borderRadius: '12px',
+                        boxShadow: 'var(--shadow-sm)',
+                    }}>
+                        <span style={{ fontSize: '1.1rem' }}>
+                            {levelEmoji[level] || '🗣️'}
+                        </span>
+                        <div>
+                            <div style={{ fontWeight: 700, fontSize: '0.95rem', color: 'var(--text-color)' }}>
+                                {name}
+                            </div>
+                            {level && (
+                                <div style={{ fontSize: '0.75rem', color: 'var(--primary-color)', fontWeight: 600 }}>
+                                    {level}
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                );
+            })}
         </div>
     );
 };

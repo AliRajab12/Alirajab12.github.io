@@ -1,159 +1,237 @@
-/* Enhanced Experience Card Styles */
-.experience-item {
-  margin-bottom: 30px;
-  padding: 32px;
-  background: var(--card-background);
-  border-radius: 16px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  position: relative;
-  overflow: hidden;
+/* ── Timeline list ───────────────────────────────────────── */
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
 }
 
-.experience-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 0;
-  background: var(--gradient-primary);
-  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+/* Vertical spine */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 8px;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--primary-color), transparent);
+    border-radius: 1px;
 }
 
-.experience-item:hover::before {
-  height: 100%;
+/* ── Timeline item ───────────────────────────────────────── */
+.timeline-item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 32px;
 }
 
-.experience-item:hover {
-  transform: translateX(8px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(12, 155, 161, 0.2);
+.timeline-item:last-child {
+    margin-bottom: 0;
 }
 
-.experience-item h3 {
-  color: var(--text-color);
-  font-size: 1.35rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  transition: color 0.3s ease;
+/* Dot on the spine */
+.timeline-dot {
+    position: absolute;
+    left: 4px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--card-background);
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(12, 155, 161, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.experience-item:hover h3 {
-  color: var(--primary-color);
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.25);
+    box-shadow: 0 0 0 5px rgba(12, 155, 161, 0.2);
+    background: var(--primary-color);
 }
 
-.experience-item p {
-  color: var(--text-color);
-  line-height: 1.7;
-  margin-bottom: 10px;
+/* ── Card ────────────────────────────────────────────────── */
+.experience-card {
+    background: var(--card-background);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    padding: 22px 26px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.experience-item p i {
-  color: var(--primary-color);
-  font-weight: 500;
+/* Left accent bar that grows on hover */
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 0;
+    background: var(--gradient-primary);
+    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0 0 3px 0;
 }
 
-.experience-item > p:last-child {
-  margin-top: 16px;
-  opacity: 0.9;
+.timeline-item:hover .experience-card::before {
+    height: 100%;
 }
 
-/* Enhanced Education Card Styles */
+.timeline-item:hover .experience-card {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(12, 155, 161, 0.2);
+}
+
+[data-theme='dark'] .experience-card {
+    border-color: rgba(255, 255, 255, 0.06);
+}
+
+[data-theme='dark'] .timeline-item:hover .experience-card {
+    border-color: rgba(29, 156, 154, 0.3);
+}
+
+/* ── Meta row ────────────────────────────────────────────── */
+.exp-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.exp-duration,
+.exp-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    opacity: 0.55;
+    font-weight: 500;
+}
+
+/* ── Title & Company ─────────────────────────────────────── */
+.exp-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0 0 4px;
+    line-height: 1.3;
+    transition: color 0.2s;
+}
+
+.timeline-item:hover .exp-title {
+    color: var(--primary-color);
+}
+
+.exp-company {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0 0 14px;
+    opacity: 0.85;
+}
+
+/* ── Description ─────────────────────────────────────────── */
+.exp-description {
+    font-size: 0.9rem;
+    line-height: 1.75;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.exp-description em {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.82rem;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 640px) {
+    .timeline::before {
+        left: 8px;
+    }
+
+    .timeline-item {
+        padding-left: 30px;
+    }
+
+    .timeline-dot {
+        left: 1px;
+        width: 14px;
+        height: 14px;
+    }
+
+    .experience-card {
+        padding: 18px 18px;
+    }
+
+    .timeline-item:hover .experience-card {
+        transform: translateX(2px);
+    }
+}
+
+/* ── Education (reuses card style) ──────────────────────── */
 .education-item {
-  margin-bottom: 30px;
-  padding: 32px;
-  background: var(--card-background);
-  border-radius: 16px;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  position: relative;
-  overflow: hidden;
+    margin-bottom: 20px;
+    padding: 22px 26px;
+    background: var(--card-background);
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .education-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 4px;
-  height: 0;
-  background: var(--gradient-primary);
-  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px; height: 0;
+    background: var(--gradient-primary);
+    transition: height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.education-item:hover::before {
-  height: 100%;
-}
+.education-item:hover::before { height: 100%; }
 
 .education-item:hover {
-  transform: translateX(8px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(12, 155, 161, 0.2);
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(12, 155, 161, 0.2);
 }
 
 .education-item h3 {
-  color: var(--text-color);
-  font-size: 1.35rem;
-  font-weight: 700;
-  margin-bottom: 12px;
-  transition: color 0.3s ease;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 6px;
+    transition: color 0.2s;
 }
 
-.education-item:hover h3 {
-  color: var(--primary-color);
-}
+.education-item:hover h3 { color: var(--primary-color); }
 
 .education-item p {
-  color: var(--text-color);
-  line-height: 1.7;
-  margin-bottom: 8px;
+    color: var(--text-color);
+    font-size: 0.88rem;
+    line-height: 1.65;
+    margin: 0 0 4px;
+    opacity: 0.75;
 }
 
-.education-item p i {
-  color: var(--primary-color);
-  font-weight: 500;
-}
+.education-item p i { color: var(--primary-color); font-weight: 600; }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .experience-item,
-  .education-item {
-    padding: 24px;
-    margin-bottom: 20px;
-  }
-
-  .experience-item h3,
-  .education-item h3 {
-    font-size: 1.2rem;
-  }
-
-  .experience-item:hover,
-  .education-item:hover {
-    transform: translateX(4px);
-  }
-}
-
-/* Dark mode specific */
-[data-theme='dark'] .experience-item,
 [data-theme='dark'] .education-item {
-  border-color: rgba(255, 255, 255, 0.05);
-}
-
-[data-theme='dark'] .experience-item:hover,
-[data-theme='dark'] .education-item:hover {
-  border-color: rgba(29, 156, 154, 0.3);
+    border-color: rgba(255, 255, 255, 0.06);
 }
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
-  .experience-item,
-  .education-item {
-    transition: none;
-  }
-  
-  .experience-item:hover,
-  .education-item:hover {
-    transform: none;
-  }
+    .timeline-item:hover .experience-card,
+    .timeline-item:hover .timeline-dot,
+    .education-item:hover {
+        transform: none;
+        transition: none;
+    }
 }
