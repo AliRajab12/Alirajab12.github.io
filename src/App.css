@@ -4,94 +4,223 @@
   --text-color: #333;
   --link-color: #0c9ba1;
   --hover-color: #009a9a;
-  --background-color: #ffffff;
-  --card-background: #f9f9f9;
+  --background-color: #f8f9fa;
+  --card-background: #ffffff;
   --card-text-color: #333;
-  --button-background: #007bff;
+  --button-background: #0c9ba1;
   --button-text: #ffffff;
-  --button-hover: #0056b3;
+  --button-hover: #009a9a;
   --section-heading-border: #0c9ba1;
   --scroll-to-top-button-bg: #0c9ba1;
   --scroll-to-top-button-hover: #009a9a;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --gradient-primary: linear-gradient(135deg, #0c9ba1 0%, #009a9a 100%);
 }
 
 [data-theme='dark'] {
   --primary-color: #1d9c9a;
-  --secondary-color: #333;
+  --secondary-color: #1e1e1e;
   --text-color: #eaeaea;
   --link-color: #1d9c9a;
   --hover-color: #159a8b;
-  --background-color: #1c1c1c;
-  --card-background: #2c2c2c;
+  --background-color: #121212;
+  --card-background: #1e1e1e;
   --card-text-color: #eaeaea;
-  --button-background: #0c9ba1;
+  --button-background: #1d9c9a;
   --button-text: #ffffff;
-  --button-hover: #009a9a;
+  --button-hover: #159a8b;
   --section-heading-border: #1d9c9a;
   --scroll-to-top-button-bg: #1d9c9a;
   --scroll-to-top-button-hover: #159a8b;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --gradient-primary: linear-gradient(135deg, #1d9c9a 0%, #159a8b 100%);
 }
+
 /* Apply global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 a {
   color: var(--link-color);
   text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
 }
 
 a:hover {
   color: var(--hover-color);
+  transform: translateY(-1px);
 }
-
 
 /* fonts.css */
 @font-face {
-    font-family: 'Roboto';
-    src: url('../public/assets/fonts/Roboto-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../public/assets/fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../public/assets/fonts/Roboto-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: 'Roboto';
+  src: url('../public/assets/fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
 
-  /* For WebKit browsers */
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../public/assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 15px; /* Adjust width as needed */
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Track color, you can also use a variable here if needed */
+  background: var(--background-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--primary-color); /* Use the primary color variable */
-  border-radius: 6px; 
+  background: var(--primary-color);
+  border-radius: 6px;
+  border: 2px solid var(--background-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: darken(var(--primary-color), 10%); 
+  background: var(--hover-color);
 }
 
-
 html {
-  scrollbar-width: 16px; 
-  scrollbar-color: var(--primary-color) var(--background-color); 
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--background-color);
   scroll-behavior: smooth;
 }
 
+/* Improved Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: -0.3px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Utility Classes */
+.animate-fade-in {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideInRight 0.6s ease-out;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Selection styles */
+::selection {
+  background-color: var(--primary-color);
+  color: var(--button-text);
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Button reset */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Media queries for responsive typography */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+  }
+}

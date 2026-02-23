@@ -1,80 +1,248 @@
 .profile-header {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center align horizontally */
-  margin-bottom: 40px;
-  background-color: var(--secondary-color); /* Use white as background color */
-  border-radius: 10px;
+  justify-content: center;
+  margin-bottom: 60px;
+  background: var(--card-background);
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-  @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center; /* Center align items vertically */
-  }
+.profile-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(12, 155, 161, 0.05), transparent);
+  transition: left 0.6s ease;
+}
+
+.profile-header:hover::before {
+  left: 100%;
+}
+
+.profile-header:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
 }
 
 .profile-pic {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  margin-right: 40px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-
-  @media (max-width: 768px) {
-      width: 120px;
-      height: 120px;
-      margin-right: 0;
-      margin-bottom: 20px; /* Space between image and text */
-  }
-}
-
-.profile-header-info {
-  @media (max-width: 768px) {
-      text-align: center; /* Center align text */
-  }
-}
-
-.profile-header-info h1 {
-  margin: 0;
-  font-size: 2.5em;
-  color: var(--text-color); /* Dark text color */
-
-  @media (max-width: 768px) {
-      font-size: 2em; /* Adjust font size for smaller screens */
-  }
-}
-
-.profile-header-info h2 {
-  margin: 10px 0;
-  color: var(--light-text-color); /* Lighter text color */
-  font-weight: 300;
+  margin-right: 50px;
+  box-shadow: var(--shadow-lg);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  border: 5px solid var(--card-background);
+  outline: 2px solid var(--primary-color);
+  outline-offset: 4px;
 }
 
 .profile-pic:hover {
-  transform: scale(1.05);
+  transform: scale(1.08) rotate(3deg);
+  box-shadow: 0 12px 40px rgba(12, 155, 161, 0.3);
+  outline-offset: 6px;
+}
+
+.profile-header-info {
+  flex: 1;
+  animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-header-info h1 {
+  margin: 0 0 12px 0;
+  font-size: 2.75rem;
+  color: var(--text-color);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.profile-header-info h2 {
+  margin: 0 0 20px 0;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1.35rem;
+  opacity: 0.8;
+  animation: fadeInUp 0.6s ease-out 0.3s both;
 }
 
 .profile-header-info p {
-  margin: 5px 0;
-  color: var(--lightest-text-color); /* Lightest text color */
+  margin: 8px 0;
+  color: var(--text-color);
+  font-size: 1rem;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease;
+}
+
+.profile-header-info p:hover {
+  transform: translateX(4px);
+}
+
+.profile-header-info p a {
+  font-weight: 500;
+  position: relative;
+}
+
+.profile-header-info p a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  transition: width 0.3s ease;
+}
+
+.profile-header-info p a:hover::after {
+  width: 100%;
 }
 
 .download-button {
-  background-color: var(--primary-color); /* Primary color for button */
-  color: var(--secondary-color); /* White text color */
+  background: var(--gradient-primary);
+  color: var(--button-text);
   border: none;
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(12, 155, 161, 0.3);
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out 0.4s both;
 }
 
-/* Adjust hover state to use a darker shade */
+.download-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+
+.download-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
 .download-button:hover {
-  background-color: var(--hover-color); /* Slightly darker shade for hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
-  outline: none; /* Remove default outline */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(12, 155, 161, 0.4);
+}
+
+.download-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(12, 155, 161, 0.3);
+}
+
+.download-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.download-button:disabled:hover {
+  box-shadow: 0 4px 16px rgba(12, 155, 161, 0.3);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .profile-header-info {
+    text-align: center;
+  }
+
+  .profile-header-info h1 {
+    font-size: 2rem;
+  }
+
+  .profile-header-info h2 {
+    font-size: 1.15rem;
+  }
+
+  .profile-header-info p {
+    justify-content: center;
+    font-size: 0.95rem;
+  }
+
+  .download-button {
+    width: 100%;
+    padding: 16px 24px;
+  }
+}
+
+/* Dark mode specific adjustments */
+[data-theme='dark'] .profile-header-info h1 {
+  background: linear-gradient(135deg, #1d9c9a 0%, #00f2fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .profile-pic,
+  .download-button,
+  .profile-header-info h1,
+  .profile-header-info h2 {
+    animation: none;
+    transition: none;
+  }
 }

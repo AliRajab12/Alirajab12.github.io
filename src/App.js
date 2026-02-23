@@ -18,7 +18,7 @@ const App = () => {
     return (<HelmetProvider>
     <div className="app">
         <DarkModeToggle />
-        <LanguageSwitcher />
+        {/* <LanguageSwitcher /> */}
         <Profile />
         
     </div>

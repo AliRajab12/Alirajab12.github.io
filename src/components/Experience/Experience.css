@@ -1,18 +1,159 @@
+/* Enhanced Experience Card Styles */
 .experience-item {
-    margin-bottom: 25px;
-    padding: 20px;
-    background-color: var(--card-background); /* Background color based on theme */
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-    color: var(--card-text-color); /* Text color based on theme */
+  margin-bottom: 30px;
+  padding: 32px;
+  background: var(--card-background);
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: var(--gradient-primary);
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.experience-item:hover::before {
+  height: 100%;
 }
 
 .experience-item:hover {
-    background-color: var(--card-background-hover); /* Slightly different background on hover */
+  transform: translateX(8px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(12, 155, 161, 0.2);
 }
 
+.experience-item h3 {
+  color: var(--text-color);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.experience-item:hover h3 {
+  color: var(--primary-color);
+}
+
+.experience-item p {
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.experience-item p i {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.experience-item > p:last-child {
+  margin-top: 16px;
+  opacity: 0.9;
+}
+
+/* Enhanced Education Card Styles */
+.education-item {
+  margin-bottom: 30px;
+  padding: 32px;
+  background: var(--card-background);
+  border-radius: 16px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.education-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background: var(--gradient-primary);
+  transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.education-item:hover::before {
+  height: 100%;
+}
+
+.education-item:hover {
+  transform: translateX(8px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(12, 155, 161, 0.2);
+}
+
+.education-item h3 {
+  color: var(--text-color);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.education-item:hover h3 {
+  color: var(--primary-color);
+}
+
+.education-item p {
+  color: var(--text-color);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.education-item p i {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .experience-item {
-        padding: 10px;
-    }
+  .experience-item,
+  .education-item {
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+
+  .experience-item h3,
+  .education-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .experience-item:hover,
+  .education-item:hover {
+    transform: translateX(4px);
+  }
+}
+
+/* Dark mode specific */
+[data-theme='dark'] .experience-item,
+[data-theme='dark'] .education-item {
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme='dark'] .experience-item:hover,
+[data-theme='dark'] .education-item:hover {
+  border-color: rgba(29, 156, 154, 0.3);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .experience-item,
+  .education-item {
+    transition: none;
+  }
+  
+  .experience-item:hover,
+  .education-item:hover {
+    transform: none;
+  }
 }

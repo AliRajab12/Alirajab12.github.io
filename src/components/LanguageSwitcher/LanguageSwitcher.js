@@ -29,6 +29,7 @@ const LanguageSwitcher = () => {
             >
                 {isMobile ? 'En' : 'English'}
             </button>
+            
             <button
                 onClick={() => handleChangeLanguage('de')}
                 className="language-button"
